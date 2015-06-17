@@ -10,11 +10,6 @@
 #include<stdlib.h>
 #include "PrintPathToLeafs.h"
 
-/* Prototypes for funtions needed in printPaths() */
-//void printPathsRecur(struct node* node, int path[], int pathLen);
-//void printArray(int ints[], int len);
-//struct node* createNodes();
-
 /*Given a binary tree, print out all of its root-to-leaf
  paths, one per line. Uses a recursive helper to do the work.*/
 void printPaths(struct node* node)
@@ -76,12 +71,12 @@ struct node* newnode(int data)
 
 struct node* createNodes(){
     /* Constructed binary tree is
-     10
-     /   \
-     8      2
-     /  \    /
-     3     5  2
-     */
+          10
+        /    \
+       8      2
+      /  \    /
+     3    5  2
+    */
     struct node *root = newnode(10);
     root->left        = newnode(8);
     root->right       = newnode(2);
