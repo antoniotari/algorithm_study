@@ -11,6 +11,8 @@
 
 static const float VALUE = 4.82345435647456;
 
+extern void printPaths(struct node* node);
+
 /* A binary tree node has data, pointer to left child
  and a pointer to right child */
 struct node
